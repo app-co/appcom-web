@@ -33,7 +33,8 @@ export default function Orçamento() {
         setTimeout(() => {
             const Form = collection(db, 'orçamento')
             addDoc(Form, {
-                data
+                data,
+                date: new Date(Date.now()).getTime(),
             }).then(() => {
                 setLoad(false)
                 toast({
