@@ -25,7 +25,7 @@ export function Links() {
                 h={["50", "60px", "70px"]}
 
             >
-                <Link href="/" _hover={{fontSize: "26"}} as="a">
+                <Link href="/" _hover={{fontSize: "24"}} as="a">
                     HOME
                 </Link>
             </Box>
@@ -41,7 +41,7 @@ export function Links() {
                 h={["50", "60px", "70px"]}
                 
             >
-                <Link href="/projetos" _hover={{fontSize: "26"}}  as="a">
+                <Link href="/projetos" _hover={{fontSize: "24"}}  as="a">
                     PROJETOS
                 </Link>
             </Box>
