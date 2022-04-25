@@ -32,10 +32,14 @@ export default function Orçamento() {
         setLoad(true)
         setTimeout(() => {
             const Form = collection(db, 'orçamento')
-            addDoc(Form, {
-                data,
+            const form = {
+                nome: data.nome,
+                email: data.email,
+                telefone: data.telefone,
+                description: data.description,
                 date: new Date(Date.now()).getTime(),
-            }).then(() => {
+            }
+            addDoc(Form, form).then(() => {
                 setLoad(false)
                 toast({
                     title: 'Solicitação enviada',
