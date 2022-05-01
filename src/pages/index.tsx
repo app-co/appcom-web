@@ -27,9 +27,9 @@ export default function Home() {
     
     <Flex
       w='100vw' 
-      h='90vh'
+      h='100vh'
       p='30' 
-      pb='20'
+      pb='30'
       bg={colors.primary[1]}
       display='box'
       alignItems='center'
@@ -38,14 +38,14 @@ export default function Home() {
 
       <Flex
         display={isDrawer ? "box" : "flex"}
-        fontSize={["14", "16", "24"]}
+        fontSize={["14", "16", "30"]}
         alignItems='center'
       >
         <Flex alignItems='center' justifyContent='center' mb={10} >
-          <Image align="center" opacity='0.7' w={["160px", "400px"]} h={["160px", "400px"]} src="/images/image.png" />
+          <Image align="center" opacity='0.7' w={["100px", "300px"]} h={["160px", "300px"]} src="/images/image.png" />
         </Flex>
 
-        <Text ml={isDrawer ? '0' : 20} maxWidth={600}  >Aplicativos ou paginas Web traz 
+        <Text ml={isDrawer ? '0' : 20} maxWidth={850}  >Aplicativos ou paginas Web traz 
           inúmeras finalidades para sua empresa. Por 
           exemplo, servir para fortalecer os relacionamentos com os clientes 
           ou apresentar as vantagens de produtos e 
@@ -56,7 +56,7 @@ export default function Home() {
         </Text>
       </Flex>
 
-      <Box mt={10} fontSize={[24, 36]} maxW='500' >
+      <Box mt={10} fontSize={[24, 36]} maxW='700' >
         <Text fontWeight="bold" >Solicite um orçamento e faça parte de
           um mundo gigante, que cabe na palma 
           da sua mão!
@@ -80,17 +80,21 @@ export default function Home() {
       </Flex>
 
       <Flex
-        mt='50'
+        mt='20'
         align="center"
         px="10"
         justifyContent='flex-end'
       >
-          <Link as="a" href="https://www.facebook.com/william.danilo.96/" >
-            <Image w={50} h={60} src="/images/Facebook.svg" alt="face" />
+          <Link as="a" href="https://wa.me/55996473543" >
+            <Image w={50} src="/images/WhatsApp.png" alt="face" />
           </Link>
 
-          <Link style={{marginLeft: 45}}  href="https://wa.me/5514998377446">
-            <Image w={50} src="/images/WhatsApp.svg" alt="whats" />
+          <Link style={{marginLeft: 45}}  href="https://www.facebook.com/search/top?q=appcombr">
+            <Image w={50} src="/images/Facebook.png" alt="whats" />
+          </Link>
+
+          <Link style={{marginLeft: 45}}  href="https://www.instagram.com/appcombr/">
+            <Image w={50} src="/images/Instagram.png" alt="whats" />
           </Link>
 
       </Flex>
